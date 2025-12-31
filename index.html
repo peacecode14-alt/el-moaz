@@ -46,6 +46,16 @@
   <!-- DETAILS -->
   <section id="details" class="page">
     <h2>تفاصيل الدرس</h2>
+    <!-- TEACHER UPLOAD -->
+<div class="teacher-upload">
+  <h3>رفع فيديو (للمدرس فقط)</h3>
+  <input type="password" id="teacherPass" placeholder="كلمة سر المدرس">
+  <input type="file" id="videoInput" accept="video/*">
+  <button onclick="uploadVideo()">رفع الفيديو</button>
+</div>
+
+<video id="lessonVideo" controls style="width:100%; display:none; margin-top:10px;"></video>
+
     <div class="video">🎥 فيديو الشرح</div>
     <button>تحميل ملخص PDF</button>
   </section>
@@ -55,4 +65,5 @@
 <script src="script1.js"></script>
 </body>
 </html>
+
 
