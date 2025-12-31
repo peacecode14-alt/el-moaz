@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>منصة المعاذ</title>
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+<div id="app">
+
+  <!-- LOGIN -->
+  <section id="login" class="page active">
+    <h2>منصة المعاذ</h2>
+    <p>أ / علاء الشيخ</p>
+    <input type="email" placeholder="البريد الإلكتروني">
+    <input type="password" placeholder="كلمة المرور">
+    <button onclick="goTo('stage')">دخول</button>
+  </section>
+
+  <!-- STAGE -->
+  <section id="stage" class="page">
+    <h2>اختيار المرحلة</h2>
+    <button onclick="goTo('grade')">المرحلة الإعدادية</button>
+    <button onclick="goTo('grade')">المرحلة الثانوية</button>
+  </section>
+
+  <!-- GRADE -->
+  <section id="grade" class="page">
+    <h2>اختيار الصف</h2>
+    <ul>
+      <li onclick="goTo('lessons')">الصف الأول</li>
+      <li onclick="goTo('lessons')">الصف الثاني</li>
+      <li onclick="goTo('lessons')">الصف الثالث</li>
+    </ul>
+  </section>
+
+  <!-- LESSONS -->
+  <section id="lessons" class="page">
+    <h2>الدروس</h2>
+    <div class="card" onclick="goTo('details')">النحو – المبتدأ والخبر</div>
+    <div class="card" onclick="goTo('details')">البلاغة – التشبيه</div>
+    <div class="card" onclick="goTo('details')">النصوص – درس قرائي</div>
+  </section>
+
+  <!-- DETAILS -->
+  <section id="details" class="page">
+    <h2>تفاصيل الدرس</h2>
+    <div class="video">🎥 فيديو الشرح</div>
+    <button>تحميل ملخص PDF</button>
+  </section>
+
+</div>
+
+<script src="script1.js"></script>
+</body>
+</html>
